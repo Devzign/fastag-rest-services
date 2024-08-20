@@ -1,0 +1,95 @@
+[
+    {
+        "RoleId": 1,
+        "Name": "Admin",
+        "ModulePermission": [
+            {
+                "ModuleName": "Dashboard",
+                "Route": "dashboard",
+                "Access": []
+            },
+            {
+                "ModuleName": "User Management",
+                "Access": [
+                    {
+                        "ChildModule": "Agent",
+                        "Route": "user-management/agent"
+                    },
+                    {
+                        "ChildModule": "Users",
+                        "Route": "user-management/users"
+                    }
+                ]
+            },
+            {
+                "ModuleName": "Team Lead",
+                "Route": "team-lead",
+                "Access": [ ]
+            },
+            {
+                "ModuleName": "Fastag Mapping",
+                "Route": "fastag-mapping",
+                "Access": [ ]
+            },
+            {
+                "ModuleName": "Report",
+                "Route": "report",
+                "Access": [ ]
+            },
+            {
+                "ModuleName": "Projects",
+                "Route": "project",
+                "Access": [ ]
+            },
+            {
+                "ModuleName": "Wallet Statement",
+                "Route": "wallet-statement",
+                "Access": [ ]
+            },
+            {
+                "ModuleName": "Plans",
+                "Route": "plans",
+                "Access": [ ]
+            },
+            {
+                "ModuleName": "Applied Projects",
+                "Route": "applied-project",
+                "Access": [ ]
+            }
+        ]
+    },
+    {
+        "RoleId": 2,
+        "Name": "TeamLead",
+        "ModulePermission": [
+            {
+                "ModuleName": "User Management",
+                "Access": [
+                    {
+                        "ChildModule": "Agent",
+                        "Route": "user-management/agent"
+                    },
+                    {
+                        "ChildModule": "Users",
+                        "Route": "user-management/users"
+                    }
+                ]
+            },
+            {
+                "ModuleName": "Fastag Mapping",
+                "Route": "fastag-mapping",
+                "Access": [ ]
+            },
+            {
+                "ModuleName": "Report",
+                "Route": "report",
+                "Access": [ ]
+            },
+            {
+                "ModuleName": "Wallet Statement",
+                "Route": "wallet-statement",
+                "Access": [ ]
+            }
+        ]
+    }
+]

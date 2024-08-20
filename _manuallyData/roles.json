@@ -1,0 +1,170 @@
+[
+    {
+        "_id": "64de0063491c3dfd0c7740d9",
+        "RoleId": 1,
+        "Name": "Admin",
+        "ModulePermission": [
+            {
+                "ModuleName": "Dashboard",
+                "Route": "dashboard",
+                "Access": []
+            },
+            {
+                "ModuleName": "User Management",
+                "Access": [
+                    {
+                        "_id": "64e5805e19147c9d2c7b9ceb",
+                        "ChildModule": "Agent",
+                        "Route": "agent"
+                    },
+                    {
+                        "_id": "64e5806719147c9d2c7b9cec",
+                        "ChildModule": "Users",
+                        "Route": "user"
+                    }
+                ]
+            },
+            {
+                "ModuleName": "Inventories",
+                "Access": [
+                    {
+                        "_id": "64de014a491c3dfd0c7740e1",
+                        "ChildModule": "My Inventory",
+                        "Route": "my-inventory"
+                    },
+                    {
+                        "_id": "64de014a491c3dfd0c7740e1",
+                        "ChildModule": "Agents Inventory",
+                        "Route": "agents-inventory"
+                    },
+                    {
+                        "_id": "64de0152491c3dfd0c7740e2",
+                        "ChildModule": "Allocate",
+                        "Route": "allocate"
+
+                    },
+                    {
+                        "_id": "64de0152491c3dfd0c7740e2",
+                        "ChildModule": "Unallocate",
+                        "Route": "unallocate"
+
+                    },
+                    {
+                        "_id": "64de0152491c3dfd0c7740e2",
+                        "ChildModule": "Request For Unallocate",
+                        "Route": "request-for-unallocate"
+
+                    },
+                    {
+                        "_id": "64de0152491c3dfd0c7740e2",
+                        "ChildModule": "Team Lead",
+                        "Route": "team-lead"
+
+                    }
+                ]
+            },
+            {
+                "ModuleName": "Team Lead",
+                "Route": "team-lead",
+                "Access": [ ]
+            },
+            {
+                "ModuleName": "Projects",
+                "Route": "project",
+                "Access": [ ]
+            },
+            {
+                "ModuleName": "Tag Trace",
+                "Route": "tag-trace",
+                "Access": [ ]
+            },
+            {
+                "ModuleName": "Settlement",
+                "Route": "settlement",
+                "Access": [ ]
+            },
+            {
+                "ModuleName": "Agent Settlement",
+                "Route": "agent-settlement",
+                "Access": [ ]
+            },
+            {
+                "ModuleName": "Wallet Statement",
+                "Route": "wallet-statement",
+                "Access": [ ]
+            },
+            {
+                "ModuleName": "Support Settings",
+                "Route": "support-settings",
+                "Access": [ ]
+            },
+            {
+                "ModuleName": "Chassis Conversion",
+                "Route": "chassis-conversiont",
+                "Access": [ ]
+            }
+        ]
+    },
+    {
+        "_id": "64de0189491c3dfd0c7740e5",
+        "RoleId": 2,
+        "Name": "TeamLead",
+        "ModulePermission": [
+            {
+                "ModuleName": "MyWorkSpace",
+                "Access": [
+                    {
+                        "_id": "64de0199491c3dfd0c7740e6",
+                        "ChildModule": "MyTime",
+                        "Route": "mytime"
+                    },
+                    {
+                        "_id": "6501c5e9a1337a520d4f481e",
+                        "ChildModule": "Weekly Hours",
+                        "Route": "weeklyhour"
+                    },
+                    {
+                        "_id": "64de01a0491c3dfd0c7740e7",
+                        "ChildModule": "MyExpense",
+                        "Route": "myexpense"
+                    }
+                ]
+            },
+            {
+                "ModuleName": "Administrator",
+                "Access": [
+                    {
+                        "_id": "64e5809619147c9d2c7b9ced",
+                        "ChildModule": "Time Sheet",
+                        "Route": "timesheet"
+                    },
+                    {
+                        "_id": "64e580a119147c9d2c7b9cee",
+                        "ChildModule": "Expense Sheet",
+                        "Route": "expensesheet"
+                    },
+                    {
+                        "_id": "64de01a9491c3dfd0c7740e8",
+                        "ChildModule": "Employee",
+                        "Route": "employee"
+                    },
+                    {
+                        "_id": "64de01b1491c3dfd0c7740e9",
+                        "ChildModule": "Customer",
+                        "Route": "customer"
+                    },
+                    {
+                        "_id": "64de01ba491c3dfd0c7740ea",
+                        "ChildModule": "Project",
+                        "Route": "project"
+                    },
+                    {
+                        "_id": "64de01c2491c3dfd0c7740eb",
+                        "ChildModule": "Task",
+                        "Route": "task"
+                    }
+                ]
+            }
+        ]
+    }
+]
